@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prévia · Karen Inamassu</title>
-  <meta name="description" content="Nutricionista oncológica há mais de 16 anos. Estratégias alimentares individualizadas para se alimentar melhor e preservar a força durante o tratamento do câncer, presencial em Curitiba ou 100% online.">
+  <meta name="description" content="Nutricionista oncológica há mais de 16 anos. Estratégias alimentares individualizadas para se alimentar melhor e preservar a força durante o tratamento do câncer, 100% online ou presencial em Curitiba e São José dos Pinhais.">
   <meta name="author" content="Karen Inamassu">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#1F3D37">
@@ -227,6 +227,27 @@
     .step h3 { font-size: 1.12rem; line-height: 1.35; margin-bottom: 6px; }
     .step p { font-size: .97rem; }
 
+    /* ---------- WHERE I SEE PATIENTS ---------- */
+    .places { background: var(--sand); }
+    .online-card { display: flex; gap: 22px; align-items: center; padding: 28px 34px; border-radius: var(--r-xl); background: var(--g800); color: rgba(248,240,232,.84); margin-bottom: 20px; }
+    .online-card h3 { color: var(--cream); font-size: 1.2rem; margin-bottom: 6px; }
+    .online-card p { font-size: 1rem; max-width: 760px; }
+    .oc-ico { width: 56px; height: 56px; border-radius: 16px; background: rgba(241,218,218,.14); color: var(--nude); display: grid; place-items: center; flex: none; }
+    .oc-ico .ico { width: 26px; height: 26px; }
+    .places-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .place { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-xl); overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+    .place-map { aspect-ratio: 16 / 10; max-width: 100%; background: var(--sage-l); }
+    .place-map iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .place-body { padding: 26px 28px 28px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .place-city { display: inline-flex; gap: 6px; align-items: center; font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--g500); }
+    .place-city .ico { width: 15px; height: 15px; }
+    .place h3 { font-size: 1.15rem; line-height: 1.3; }
+    .place-addr { font-size: .97rem; color: var(--ink); line-height: 1.55; }
+    .place-note { font-size: .93rem; color: var(--muted); }
+    .place-link { margin-top: auto; padding-top: 8px; display: inline-flex; gap: 8px; align-items: center; font-family: var(--head); font-weight: 600; font-size: .9rem; color: var(--g800); }
+    .place-link .ico { width: 16px; height: 16px; transition: transform .3s var(--ease); }
+    .place-link:hover .ico { transform: translate(2px, -2px); }
+
     /* ---------- STUDY + TALK MEDIA ---------- */
     .study { background: var(--cream); }
     .study-head { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: end; margin-bottom: 44px; }
@@ -384,6 +405,9 @@
       .media-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto 240px; height: auto; gap: 10px; }
       .media-video { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
       .creds { grid-template-columns: 1fr; }
+      .places-grid { grid-template-columns: 1fr; }
+      .online-card { flex-direction: column; align-items: flex-start; padding: 26px 24px; gap: 16px; }
+      .place-body { padding: 22px 22px 24px; }
       .focus-body { padding: 30px 24px; }
       .g-score { width: 100%; padding: 16px 20px; }
       .rv { width: 300px; padding: 24px; margin-right: 14px; }
@@ -432,6 +456,8 @@
       <symbol id="i-gut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a3 3 0 0 0 3 3h3a4 4 0 0 1 0 8h-4a3 3 0 0 0 0 6"/><path d="M14 9a3 3 0 0 1 0 6"/></symbol>
       <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16.5h.01"/></symbol>
       <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 20z"/><path d="M9.5 21.5v-6h5v6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></symbol>
       <symbol id="i-google" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></symbol>
     </defs>
   </svg>
@@ -445,6 +471,7 @@
       <nav class="nav-links" aria-label="Seções">
         <a href="#video">Vídeo</a>
         <a href="#como-funciona">Como funciona</a>
+        <a href="#onde-atendo">Onde atendo</a>
         <a href="#sobre">Sobre mim</a>
         <a href="#avaliacoes">Avaliações</a>
         <a href="#duvidas">Dúvidas</a>
@@ -466,7 +493,7 @@
             <a href="#agendar" data-cta class="btn btn-primary" aria-label="Agendar consulta com Karen Inamassu pelo WhatsApp" onclick="gtag('event','cta_hero',{event_category:'CTA'})">
               <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Quero agendar minha consulta
             </a>
-            <span class="cta-note">Atendimento presencial em Curitiba ou 100% online, no conforto da sua casa.</span>
+            <span class="cta-note">Atendimento 100% online, no conforto da sua casa, ou presencial em Curitiba e São José dos Pinhais.</span>
           </div>
           <div class="hero-proof reveal d3">
             <div class="avatars" aria-hidden="true"><span>C</span><span>O</span><span>M</span><span>D</span></div>
@@ -489,7 +516,7 @@
     <!-- STRAIGHT BAR -->
     <div class="bar" aria-label="Destaques">
       <div class="marquee-track">
-        <span>Atendimento presencial em Curitiba ou 100% online, no conforto da sua casa <svg aria-hidden="true"><use href="#i-spark"/></svg></span>
+        <span>Atendimento 100% online ou presencial em Curitiba e São José dos Pinhais <svg aria-hidden="true"><use href="#i-spark"/></svg></span>
         <span>Estratégias alimentares para cada fase do tratamento <svg aria-hidden="true"><use href="#i-spark"/></svg></span>
         <span>Palestrante em congressos de nutrição oncológica <svg aria-hidden="true"><use href="#i-spark"/></svg></span>
         <span>Mais de 16 anos dedicados à nutrição oncológica <svg aria-hidden="true"><use href="#i-spark"/></svg></span>
@@ -659,6 +686,49 @@
       </div>
     </section>
 
+    <!-- ONDE ATENDO -->
+    <section class="section places" id="onde-atendo" aria-labelledby="places-title">
+      <div class="container">
+        <div class="center-head reveal">
+          <h2 id="places-title" class="h2">Você escolhe o formato <em>mais confortável para você</em></h2>
+          <p class="lead">A maior parte dos meus atendimentos é online, por videochamada, de qualquer lugar do Brasil. Se você prefere a consulta presencial, eu atendo em dois consultórios na região de Curitiba. É só escolher a logística que fica mais fácil para a sua rotina.</p>
+        </div>
+        <div class="online-card reveal">
+          <span class="oc-ico"><svg class="ico" aria-hidden="true"><use href="#i-laptop"/></svg></span>
+          <div>
+            <h3>100% online, no conforto da sua casa</h3>
+            <p>As consultas acontecem por videochamada, sem deslocamento e sem precisar sair de casa nos dias mais difíceis do tratamento. É o formato que a maioria dos meus pacientes escolhe.</p>
+          </div>
+        </div>
+        <div class="places-grid">
+          <article class="place reveal">
+            <div class="place-map">
+              <iframe src="https://www.google.com/maps?q=Karen+Inamassu+Nutricionista+Oncol%C3%B3gica+em+Curitiba&amp;output=embed" title="Mapa do consultório no Centro de Curitiba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="place-body">
+              <span class="place-city"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Curitiba · Centro</span>
+              <h3>Consultório no Centro de Curitiba</h3>
+              <p class="place-addr">R. Mal. Deodoro, 450 · Apto 302<br>Edifício Maurício Caillet · Centro<br>Curitiba – PR · 80010-010</p>
+              <p class="place-note">Na região central da cidade, perto da Praça Santos Andrade e do Teatro Guaíra.</p>
+              <a class="place-link" href="https://maps.app.goo.gl/AtkuZrYcJBCa899Y7" target="_blank" rel="noopener noreferrer" onclick="gtag('event','rota_curitiba',{event_category:'Engajamento'})">Ver rota no Google Maps <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="place reveal d1">
+            <div class="place-map">
+              <iframe src="https://www.google.com/maps?q=Ecomall+Parque+da+Fonte,+R.+Alm.+Alexandrino,+1087,+S%C3%A3o+Jos%C3%A9+dos+Pinhais+-+PR&amp;output=embed" title="Mapa do consultório em São José dos Pinhais" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="place-body">
+              <span class="place-city"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>São José dos Pinhais · Jardim Independência</span>
+              <h3>Consultório em São José dos Pinhais</h3>
+              <p class="place-addr">Ecomall Parque da Fonte<br>R. Alm. Alexandrino, 1087 · Loja 1<br>Jardim Independência · São José dos Pinhais – PR · 83040-420</p>
+              <p class="place-note">Dentro do Ecomall Parque da Fonte, um centro comercial com área verde, lojas e restaurantes.</p>
+              <a class="place-link" href="https://maps.app.goo.gl/P3xAwBw9YDc66pgd6" target="_blank" rel="noopener noreferrer" onclick="gtag('event','rota_sjp',{event_category:'Engajamento'})">Ver rota no Google Maps <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ESTUDO + PALESTRA -->
     <section class="section study" id="atualizacao" aria-labelledby="study-title">
       <div class="container">
@@ -724,7 +794,7 @@
             <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><span>Nutricionista Clínica Oncológica<small>CRN8 6238</small></span></li>
             <li><svg class="ico" aria-hidden="true"><use href="#i-leaf"/></svg><span>Mais de 16 anos em oncologia<small>antes, durante e depois do tratamento</small></span></li>
             <li><svg class="ico" aria-hidden="true"><use href="#i-mic"/></svg><span>Palestrante<small>em eventos de nutrição oncológica</small></span></li>
-            <li><svg class="ico" aria-hidden="true"><use href="#i-laptop"/></svg><span>Atendimento online<small>ou presencial em Curitiba</small></span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-laptop"/></svg><span>Atendimento online<small>ou presencial em Curitiba e São José dos Pinhais</small></span></li>
           </ul>
           <a href="#agendar" data-cta class="btn btn-primary" aria-label="Pedir ajuda com a alimentação pelo WhatsApp" onclick="gtag('event','cta_sobre',{event_category:'CTA'})">
             <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Quero agendar minha consulta
@@ -800,7 +870,7 @@
         <div class="faq-list reveal d1">
           <details open>
             <summary>Como funciona o atendimento online?<span class="pm"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
-            <div class="ans">Hoje a maior parte dos meus atendimentos é online. As consultas acontecem por videochamada, você não precisa sair de casa e recebe o mesmo cuidado de uma consulta presencial. Para quem está em Curitiba, também atendo no consultório, no Centro da cidade.</div>
+            <div class="ans">Hoje a maior parte dos meus atendimentos é online. As consultas acontecem por videochamada, você não precisa sair de casa e recebe o mesmo cuidado de uma consulta presencial. Se você preferir o presencial, atendo em dois consultórios: no Centro de Curitiba e em São José dos Pinhais, no Ecomall Parque da Fonte.</div>
           </details>
           <details>
             <summary>Vou receber um plano alimentar?<span class="pm"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
@@ -838,7 +908,7 @@
         <a href="#agendar" data-cta class="btn btn-light" aria-label="Agendar consulta pelo WhatsApp" onclick="gtag('event','cta_final',{event_category:'CTA'})">
           <svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Quero agendar minha consulta
         </a>
-        <span class="cta-note">Presencial em Curitiba ou 100% online, no conforto da sua casa.</span>
+        <span class="cta-note">100% online, no conforto da sua casa, ou presencial em Curitiba e São José dos Pinhais.</span>
       </div>
     </section>
   </main>
@@ -851,8 +921,9 @@
           <p>Nutricionista Clínica Oncológica · CRN8 6238</p>
         </div>
         <div>
-          <h4>Consultório</h4>
+          <h4>Consultórios</h4>
           <p>R. Mal. Deodoro, 450 · Apto 302<br>Edifício Maurício Caillet · Centro<br>Curitiba – PR · 80010-010</p>
+          <p style="margin-top:14px">Ecomall Parque da Fonte<br>R. Alm. Alexandrino, 1087 · Loja 1<br>São José dos Pinhais – PR · 83040-420</p>
         </div>
         <div>
           <h4>Contato</h4>
